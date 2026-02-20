@@ -17,6 +17,9 @@ st.set_page_config(
 st.title("Semangat Captain Err 🤍")
 st.subheader("Untuk Abang-Abang UNPAD Favoritku ✨")
 
+audio_file = open("lagu.mp3", "rb")
+audio_bytes = audio_file.read()
+st.audio(audio_bytes, format="audio/mp3")
 
 # =============================
 # QUOTES
@@ -76,5 +79,6 @@ elif mood == "😌 Santai":
 st.markdown("---")
 
 st.caption("Dibuat khusus dengan penuh sayang 🤍✨")
+
 
 
