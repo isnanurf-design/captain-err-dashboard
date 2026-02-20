@@ -17,13 +17,10 @@ st.set_page_config(
 st.title("Semangat Captain Err 🤍")
 st.subheader("Untuk Abang-Abang UNPAD Favoritku ✨")
 
-st.markdown(
-    """
-    <audio autoplay loop>
-        <source src="lagu.mp3" type="audio/mp3">
-    </audio>
-    """,
-    unsafe_allow_html=True
+audio_file = open("lagu.mp3", "rb")
+audio_bytes = audio_file.read()
+st.audio(audio_bytes, format="audio/mp3")
+
 )
 
 # =============================
@@ -82,4 +79,5 @@ elif mood == "😌 Santai":
 # FOOTER
 # =============================
 st.markdown("---")
+
 st.caption("Dibuat khusus dengan penuh sayang 🤍✨")
