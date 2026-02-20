@@ -17,7 +17,6 @@ st.set_page_config(
 st.title("Semangat Captain Err 🤍")
 st.subheader("Untuk Abang-Abang UNPAD Favoritku ✨")
 
-)
 
 # =============================
 # QUOTES
@@ -77,4 +76,5 @@ elif mood == "😌 Santai":
 st.markdown("---")
 
 st.caption("Dibuat khusus dengan penuh sayang 🤍✨")
+
 
